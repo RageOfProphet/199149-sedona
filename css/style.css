@@ -1,54 +1,152 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  max-width:100%;
+  height:auto;
+}
+
 html,
 body {
   font-family: "PT Sans", sans-serif;
-  line-height: 26px;
   text-transform: uppercase;
-  max-width: 768px;
+  font-size: 0;
+  line-height: 0;
+  width: 768px;
   margin: 0 auto;
 }
 
 h2 {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   color: #000000;
 }
 
-p {
+p, span {
   font-weight: normal;
   font-size: 14px;
-  color: #c9c9c9;
+  line-height: 26px;
+  color: #333333;
 }
 
 div {
   box-shadow: inset 0 0 0 2px blue;
 }
 
+.main-header {
+  padding: 0px 36px;
+  font-size: 0;
+  margin: 0;
+}
+
 .main-menu {
-  list-style: none;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+  width: 38.5%;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.main-menu:last-child {
+margin-left: 15px;
 }
 
 .main-menu-item {
-  /*display: inline-block;*/
-}
-
-.main-menu-item > a {
-  display: block;
+  display: inline-block;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: #232323;
-  background-color: lightgreen;
+  padding: 5px 10px;
+}
 
+.logo {
+  display: inline-flex;
+  margin: 0;
+  z-index: 2;
+}
+
+main {
+  margin-top: -14px;
+  z-index: 1;
+}
+
+.welcome-block {
+  padding-top: 58px;
+  padding-bottom: 51px;
+}
+
+.welcome-block h2 {
+  margin: 0px 163px 30px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.welcome-block p {
+  padding : 0px 139px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  width: 33.3%;
+  height: 256px;
+  text-align: center;
+}
+
+.icon-container {
+  height: 131px;
+  display: flex;
+}
+
+.icon-container img {
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.feature-item h2 {
+  margin-top: 50px;
+  margin-bottom: 19px;
+}
+.feature-item p {
+  line-height: 21px;
+  margin-top: 19px;
+}
+
+.features-pic {
+  width: 66.6%;
+  display: inline-flex;
+}
+
+.blue-item {
+  background-color: #81b3d2;
+}
+
+.gray-item {
+  background-color: #eeeeee;
+}
+
+.blue-item h2, .blue-item p, .blue-item span{
+  color: white;
+}
+
+.promo {
+  height: 331px;
+  background-color: #ffffff;
+}
+.promo h2{
+  margin-top: 30px;
 }
